@@ -1,3 +1,37 @@
+/* Navigation Bar */
+
+
+nav {
+    background-color: white; /* Background color of the navbar */
+    padding: 20px 0; /* Padding around the navbar */
+
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullets from the list */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align the list items */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add some space between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #152f41; /* Text color of the links */
+    font-size: 22px; /* Font size of the links */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+nav ul li a:hover {
+    color: #ccc; /* Text color of the links on hover */
+}
+
+
 
 /* Featured Photo */
 
@@ -6,19 +40,22 @@
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(images/me.jpg)no-repeat;
+    background:url(images/me.png)no-repeat;
     background-size:cover;
     background-position: center;
-    height:890px;
+    height:600px;
+    justify-content: center; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .welcome-hero:before{
     position:absolute;
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(150, 184, 243, 0.65);
     width:100%;
     height:100%;
+    justify-content: center; 
 }
 
 .header-text h2 {
@@ -28,29 +65,115 @@
     text-transform: uppercase;
     line-height: 1.5;
     position: relative;
+    display: flex;
+
 }
 
-.header-text h2 span {color: #d92cf9;}
+.header-text h2 span {color: #152f41;}
 .header-text p {
-    color: #fff;
+    color: #152f41;
     font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
     margin: 30px 0 60px;
-    letter-spacing: 1px;hm-foot-icon {
-   
-    }
+    letter-spacing: 1px;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
-/* Footer */
+p2{
+    color: #f4f4f4;
+    position: flex;
+    text-transform: uppercase;
 
-.footer-design{
+}
+
+/* Portfolio */
+
+.portfolio-label {
+    font-size: 50px; 
+    margin-top: 1300px; 
+    margin-left: 320px;
+}
+
+.portfolio-details {
+    padding: 0px 0 0px;
+    border: 0px solid #e5ebf2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; 
+    margin: 0 auto; 
+    align-items: center;
+    margin-left: -250px;
+
+}
+
+.flex-item-project {
+    border-style: solid;
+    border-width: 0px;
+    flex-direction: row-reverse;
+    flex-basis: calc(33.33% - 20px); 
+    width: 1350px;
+    margin-right: 50px;
+    align-items: center;
+    
+}
+
+.flex-item-project img {
+    max-width: 100%; /* Limit image width to its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set maximum height */
+}
+
+
+
+/* About Me */
+
+
+.flex-container {
+    border-style: solid;
+    border-width: 0px;
+    flex-direction: row-reverse;
+    display : flex;
+    margin-top: 2255px;
+    margin-left: -1200px;
+
+}
+
+
+.flex-item {
+    border-style: solid;
+    border-width: 0px;
+    flex-direction: row-reverse;
+    margin-left: -250px;
+
+
+}
+
+
+
+
+
+/* https://uplbidet.vercel.app/ */
+
+/* Footer */
+.flex-container-footer {
+    border-style: solid;
+    border-width: 0px;
+    border-color: red;
+    flex-direction: row-reverse;
+    display : flex;
+    margin-top: 2655px;
+
+}
+
+
+.footer-design {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    margin-top: 1500px;
-    background-size:cover;
-    background-position: center;
-    height:890px;
+    padding: 50px 0; 
+    width : 500px;
+    margin-left: -2000px;
 }
