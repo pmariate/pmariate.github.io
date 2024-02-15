@@ -12,4 +12,5 @@ Under your repository name, click Settings. ...
 In the "Code and automation" section of the sidebar, click Pages.
 What are your key takeaways from this exercise?
 - use flexboxes often
+- test often
 

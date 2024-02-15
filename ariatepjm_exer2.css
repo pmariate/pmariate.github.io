@@ -1,41 +1,91 @@
-/* Navigation Bar */
+/* Home  */
 
 
-nav {
-    background-color: white; /* Background color of the navbar */
-    padding: 20px 0; /* Padding around the navbar */
-
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* NavBar */
+
 nav ul {
-    list-style-type: none; /* Remove bullets from the list */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center; /* Center-align the list items */
+    text-align: center; 
+
 }
 
 nav ul li {
-    display: inline; /* Display list items inline */
-    margin-right: 20px; /* Add some space between list items */
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #152f41; /* Text color of the links */
-    font-size: 22px; /* Font size of the links */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    color: #fff;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    color: #ccc; /* Text color of the links on hover */
+.section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.header-text h2 {
+    margin: 0;
+}
+
+/* Portfolio */
+
+
+.portfolio-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item-project {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.flex-item-project img {
+    width: 100%;
+    height: auto;
 }
 
 
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+  
+
+/* Footer */
+
+footer {
+    background-color: #0a0808;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 
 /* Featured Photo */
 
-.welcome-hero{
+
+.welcome-section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,137 +93,7 @@ nav ul li a:hover {
     background:url(images/me.png)no-repeat;
     background-size:cover;
     background-position: center;
-    height:600px;
-    justify-content: center; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.welcome-hero:before{
-    position:absolute;
-    content: " ";
-    top:0;
-    left:0;
-    background:rgba(150, 184, 243, 0.65);
-    width:100%;
-    height:100%;
+    height:400px;
     justify-content: center; 
 }
 
-.header-text h2 {
-    color: #fff;
-    font-size: 54px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.5;
-    position: relative;
-    display: flex;
-
-}
-
-.header-text h2 span {color: #152f41;}
-.header-text p {
-    color: #152f41;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 30px 0 60px;
-    letter-spacing: 1px;
-    display: flex;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-p2{
-    color: #f4f4f4;
-    position: flex;
-    text-transform: uppercase;
-
-}
-
-/* Portfolio */
-
-.portfolio-label {
-    font-size: 50px; 
-    margin-top: 1300px; 
-    margin-left: 320px;
-}
-
-.portfolio-details {
-    padding: 0px 0 0px;
-    border: 0px solid #e5ebf2;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; 
-    margin: 0 auto; 
-    align-items: center;
-    margin-left: -250px;
-
-}
-
-.flex-item-project {
-    border-style: solid;
-    border-width: 0px;
-    flex-direction: row-reverse;
-    flex-basis: calc(33.33% - 20px); 
-    width: 1350px;
-    margin-right: 50px;
-    align-items: center;
-    
-}
-
-.flex-item-project img {
-    max-width: 100%; /* Limit image width to its container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set maximum height */
-}
-
-
-
-/* About Me */
-
-
-.flex-container {
-    border-style: solid;
-    border-width: 0px;
-    flex-direction: row-reverse;
-    display : flex;
-    margin-top: 2255px;
-    margin-left: -1200px;
-
-}
-
-
-.flex-item {
-    border-style: solid;
-    border-width: 0px;
-    flex-direction: row-reverse;
-    margin-left: -250px;
-
-
-}
-
-
-
-
-
-/* https://uplbidet.vercel.app/ */
-
-/* Footer */
-.flex-container-footer {
-    border-style: solid;
-    border-width: 0px;
-    border-color: red;
-    flex-direction: row-reverse;
-    display : flex;
-    margin-top: 2655px;
-
-}
-
-
-.footer-design {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0; 
-    width : 500px;
-    margin-left: -2000px;
-}
